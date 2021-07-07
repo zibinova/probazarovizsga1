@@ -2,7 +2,7 @@
 
 Készíts egy Python python applikációt (egy darab python file) ami selenium-ot használ. 
 
-A program töltse be a todo app-ot az `https://white-tree-0e3125903.azurestaticapps.net/masodik.html` oldalról.
+A program töltse be a todo app-ot az [https://blue-rock-04e841a03.azurestaticapps.net/masodik.html](https://blue-rock-04e841a03.azurestaticapps.net/masodik.html) oldalról.
 
 Feladatod, hogy automatizáld selenium webdriverrel a todo app tesztelését.
 

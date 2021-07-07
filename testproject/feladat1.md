@@ -2,7 +2,7 @@
 
 Készíts egy Python python applikációt (egy darab python file) ami selenium-ot használ. 
 
-A program töltse be a kalkulátor app-ot az `https://white-tree-0e3125903.azurestaticapps.net/elso.html` oldalról. 
+A program töltse be a kalkulátor app-ot az [https://blue-rock-04e841a03.azurestaticapps.net/elso.html](https://blue-rock-04e841a03.azurestaticapps.net/elso.html) oldalról. 
 
 Feladatod, hogy automatizáld selenium webdriverrel az alábbi funkcionalitásokat a kalkulátorban:
 
