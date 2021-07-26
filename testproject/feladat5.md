@@ -1,30 +1,30 @@
-## 5 Feladat: Bárány számláló programot
+# 5 Feladat: Landtransfer tax automatizálása
 
-Készíts egy Python python applikációt (egy darab python file) ami `"elszámol annyi bárányig"` amit a felhasználó kér.
+Készíts egy Python python applikációt (egy darab python file) ami selenium-ot használ. 
 
-```Python
-# - You have to write an application where a user gives you non-negative integer, and you have to print out how many sheep you have.
-#  For example: input = 3,   and the print out : "1 sheep...2 sheep...3 sheep..."
+A program töltse be a Landtransfer tax app-ot az [https://witty-hill-0acfceb03.azurestaticapps.net/landtransfertax.html](https://witty-hill-0acfceb03.azurestaticapps.net/landtransfertax.html) oldalról.
 
-# read from the user through the console value of x, say now that x == 3
+Feladatod, hogy automatizáld selenium webdriverrel a Landtransfer tax app tesztelését.
 
-count_sheep(x)
+Az ellenőrzésekhez __NEM__ kell teszt keretrendszert használnod (mint pl a pytest).
+Egyszerűen használj elágazásokat vagy `assert` összehasonlításokat.
 
-# "1 sheep...2 sheep...3 sheep..."
-```
+# Az alábbi tesztesetekete fedd le:
 
+## TC01: üres kitöltés helyessége
+* ha nincs kitoltve az "Estimate of property you wish you to purchase:" mező de mégis csak megnyomjuk a "Go" feliratú gombot
+* ellenőrizzük, hogy a "Land Transfer Fee" feliratú mező pontosan üres marad-e
+* ellenőrizzük, hogy megjelenik-e a következő felirat: "Enter the property value before clicking Go button."
 
-### Tanácsok a megoldáshoz:
-* Fontos, hogy függvényt adjál be
-* Fontos, hogy legyen bekérés a felhasználótól a konzolon keresztül
-* Ne gondold túl!
-* Bérmilyen megodás ami a fenti teszt adatokra (és hasonló tesztadatokra) a helyes megoldást adja tökéletesen megfelel
-* Nincs pontlevonás ha `lehetne ezt egyszerűbben is`
-* Nincs plusz pont ha `kevesebb sorból oldod meg`
+## TC02: helyes kitöltés helyes kitöltése
+* töltsük ki a következő adatokkal a formot:
+    * 33333
+* nyomjuk meg a "Go" feliratú gombot
+* ellenőrizzük, hogy a "Land Transfer Fee" feliratú mező pontosan: 16.665 értéket mutatja-e
 
 
 ### A megoldás beadása
-* a megoldásokat a `testproject` mappába tedd, `count_sheep.py`
+* a megoldásokat a `testproject` mappába tedd, `landtrasfertax.py`
 * a lokálisan kidolgozott megoldásokat előbb commitold `git commit`
 * majd ne felejtsd el `git push` segítségével a Github szerverre is felküldeni
 * ne felejtsd el, hogy pontokat ér a szintaktikai legjobb praktikák megvalósítása (`ctlr`+`alt`+`l`)
