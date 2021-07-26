@@ -2,7 +2,7 @@
 
 Készíts egy Python python applikációt (egy darab python file) ami selenium-ot használ. 
 
-A program töltse be a timesheet app-ot az [https://witty-hill-0acfceb03.azurestaticapps.net/timesheet.html](https://blue-rock-04e841a03.azurestaticapps.net/harmadik.html) oldalról.
+A program töltse be a timesheet app-ot az [https://witty-hill-0acfceb03.azurestaticapps.net/timesheet.html](https://witty-hill-0acfceb03.azurestaticapps.net/timesheet.html) oldalról.
 
 Feladatod, hogy automatizáld selenium webdriverrel a Timesheet  app tesztelését.
 
