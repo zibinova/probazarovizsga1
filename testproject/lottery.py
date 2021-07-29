@@ -29,7 +29,7 @@ for _ in range(6):
     draw_button.click()
 
 time.sleep(2)
-# assert len(balls) == 6
+# assert len(balls) == 6 - ez itt miert nem mukodik?
 
 ball1 = driver.find_element_by_xpath("//*[@id='container']/div[1]").text
 ball2 = driver.find_element_by_xpath("//*[@id='container']/div[2]").text
