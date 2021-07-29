@@ -40,5 +40,6 @@ issue_button.click()
 assert driver.find_element_by_id("passenger-name").text == passenger.upper()
 assert driver.find_element_by_id("departure-date-text").text == "2021-07-28"
 assert driver.find_element_by_id("departure-time-text").text == "12:25PM"
-
+assert driver.find_element_by_id("side-detparture-date").text == "2021-07-28"
+assert driver.find_element_by_id("side-departure-time").text == "12:25PM"
 # nincs időm függvénybe szervezni
