@@ -18,7 +18,7 @@ go_button.click()
 
 # TC01: üres kitöltés helyessége
 assert driver.find_element_by_id("disclaimer").text == "Enter the property value before clicking Go button."
-assert driver.find_element_by_id("tax").text == ""
+assert driver.find_element_by_id("tax").get_attribute("value") == ""
 
 
 # TC02: helyes kitöltés helyes kitöltése
@@ -26,6 +26,6 @@ estimate_field = driver.find_element_by_id("price")
 # time.sleep(2)
 estimate_field.send_keys("33333")
 go_button.click()
-assert driver.find_element_by_id("tax") == "16.665"
+assert driver.find_element_by_id("tax").get_attribute("value") == "16.665"
 
 # test failed

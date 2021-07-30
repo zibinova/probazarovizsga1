@@ -30,8 +30,10 @@ assert not next_button.is_enabled()
 
 # TC02: helyes kitöltés helyes köszönet képernyő
 
-
+# Clear button megnyomása
+driver.find_element_by_xpath('//*[@id="buttons"]/button').click()
 email_input_field.send_keys("test@bela.hu")
+
 driver.find_element_by_xpath("//*[@id='section-timesheet']/div[1]/form/input[2]").send_keys("2")
 driver.find_element_by_xpath("//*[@id='section-timesheet']/div[1]/form/input[3]").send_keys("0")
 driver.find_element_by_xpath("//*[@id='section-timesheet']/div[1]/form/textarea").send_keys("working hard")
