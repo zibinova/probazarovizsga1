@@ -57,3 +57,8 @@ assert len(number_list) == 6
 reset_button.click()
 balls = driver.find_elements_by_class_name("balls")
 assert len(balls) == 0
+
+
+"""15 pont / # assert len(balls) == 6 - ez itt miert nem mukodik? kérdésedre a válasz: a balls-t az elején kikerested, 
+amikor még a len-je 0. Aztán a 6-szori generate gomb megnyomása után újra meg kellett volna határozni, 
+hiszen időközben megváltozott a dom.  Az assert-ed 0 == 6 miatt futott hibára."""

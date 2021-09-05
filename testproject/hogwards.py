@@ -1,3 +1,5 @@
+# 14 pont / Az oldalt szereplő dátum és idő mezők vizsgálata kimaradt.
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
@@ -34,7 +36,6 @@ departure_time.send_keys(date_to_set.strftime('%p'))
 # ticket creation activation
 issue_button = driver.find_element_by_id("issue-ticket")
 issue_button.click()
-
 
 # asserts validations
 assert driver.find_element_by_id("passenger-name").text == passenger.upper()

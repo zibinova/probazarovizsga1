@@ -1,3 +1,5 @@
+# 16 pont max
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException

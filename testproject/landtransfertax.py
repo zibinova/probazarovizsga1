@@ -29,3 +29,7 @@ go_button.click()
 assert driver.find_element_by_id("tax").get_attribute("value") == "16.665"
 
 # test failed
+
+#12 pont / a teszt a "33333" input adattal valóban nem a 16.665 értéket eredményezi, azaz valóban bukik a teszt,
+# de nálad hiányzik a kódból az érték rész: driver.find_element_by_id("tax").get_attribute("value") ezért hibás az assert,
+# illetve az első assert-nél is a text-et vizsgáltad a value helyett.
